@@ -2,7 +2,7 @@ import { useAccount } from '@web3modal/react'
 import { useSendTransaction } from '@web3modal/react'
 import { useState } from 'react'
 
-export function TransactionSection() {
+export default function TransactionSection() {
   const { chainId, address } = useAccount()
 
   const { transaction, refetch } = useSendTransaction()
